@@ -28,6 +28,7 @@ RUN apt-get update && \
 	apt-get -y install build-essential python-dev libxml2-dev python-pip unzip wget \
 	          supervisor graphviz libghc-graphviz-dev libgraphviz-dev python-psycopg2 \
 		  libgraphviz-dev python-pygraphviz imagemagick \
+		  git \
 		  ca-certificates \
                   curl && \
 	pip install setuptools --no-use-wheel --upgrade && \
