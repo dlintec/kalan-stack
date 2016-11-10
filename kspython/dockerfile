@@ -6,7 +6,7 @@ MAINTAINER dlintec <info@dlintec.com>
 ### To build use:
 ###   docker build -t kspython .
 ### To run:
-###   docker run -p 80:80 -p 443:443 -d kspython
+###   docker run --name kspython_c -p 80:80 -p 443:443 -d kspython
 ### Using existing application on docker host
 ###   docker run --name kspython_c -p 80:80 -p 443:443 -v /local/path/to/myapp:/home/www-data/web2py/applications/myapp -d kspython
 ### example for start container named kspython_container using application SG at same folder as dockerfile: 
