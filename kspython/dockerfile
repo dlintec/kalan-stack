@@ -76,6 +76,7 @@ RUN mkdir $INSTALL_DIR && cd $INSTALL_DIR && \
 COPY python-req-apt-get.txt /home/www-data/web2py/python-req-apt-get.txt
 
 RUN mkdir /home/www-data/web2py/pip && \
+pip install --upgrade pip && \
 pip install --download /home/www-data/web2py/pip -r /home/www-data/web2py/python-req-apt-get.txt && \
 pip install -r /home/www-data/web2py/python-req-apt-get.txt --no-index --find-links file:///home/www-data/web2py/pip
 
